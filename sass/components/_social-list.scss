@@ -1,0 +1,36 @@
+.team-list-icone {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.team-link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sprite-team {
+  width: 20px;
+  height: 20px;
+  fill: $icone-color;
+}
+
+.team-link .sprite-team {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-link:hover .sprite-team,
+.team-link:focus .sprite-team {
+  fill: $darc-team-color;
+}
+
+.team-link:hover,
+.team-link:focus {
+  background-color: $accent-color;
+}

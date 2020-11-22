@@ -1,0 +1,38 @@
+.duing .container {
+  padding-bottom: 94px;
+}
+
+.duing-list {
+  display: flex;
+}
+
+.duing-list-item {
+  position: relative;
+}
+
+.duing-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.duing-list-description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.duing-description {
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}

@@ -1,0 +1,62 @@
+.about .container {
+  padding-top: 91px;
+  padding-bottom: 94px;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-list-item {
+  width: 270px;
+}
+
+.about-list-item::before {
+  display: block;
+  margin-bottom: 30px;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-list-item:nth-child(1)::before {
+  background-image: url(../images/about_us/group_1.svg);
+}
+
+.about-list-item:nth-child(2)::before {
+  background-image: url(../images/about_us/clock_2.svg);
+}
+
+.about-list-item:nth-child(3)::before {
+  background-image: url(../images/about_us/diagram_3.svg);
+}
+
+.about-list-item:nth-child(4)::before {
+  background-image: url(../images/about_us/astronaut_4.svg);
+}
+
+.about-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-list-title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $title-color;
+}
+
+.about-list-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: $description-color;
+}
